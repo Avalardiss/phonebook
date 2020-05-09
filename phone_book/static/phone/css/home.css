@@ -1,0 +1,173 @@
+html {font-size: 24px;}
+
+header {
+	margin: 1% 0.5% 0% 0%;
+    text-align:right;
+    color: White;
+    font-size: 2.8em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    padding: 0% 1% 0% 0%;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 10px 6px 4px rgba(247, 215, 158, 0.2), 10px 7px 4px rgba(247, 215, 158, 0.2), 10px 7px 4px rgba(247, 215, 158, 1);
+}
+
+body {
+	background: url("../img/fon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+	width:100%;
+	padding: 0.5% 1% 0.5% 1%;
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+}
+
+h1, h2 {
+	position: relative;
+    color: White;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 10px 6px 4px rgba(247, 215, 158, 0.2), 10px 7px 4px rgba(247, 215, 158, 0.2), 10px 7px 4px rgba(247, 215, 158, 1);
+}
+
+h1 {
+	margin: -5% 0% 6% 0%;
+    text-align:left;
+    font-size: 1.3em;
+}
+
+h2{
+    margin: -31.5% 1% 0% 0%;
+    text-align:right;
+    font-size: 2.8em;
+}
+
+.search {
+	margin: -3.5% auto;
+    font-size: 1.5em;
+    position: relative;
+    font-family: Times New Roman;
+    display:inline-block;
+    padding: 0 auto;
+    width: 700px;
+}
+
+.form-control {
+	width: 700px;
+    text-align:left;
+    box-shadow: 0 0 1vmin 0.5vmin Grey;
+    font-size: 1em;
+}
+
+.button_search {
+    font-size: 1em;
+    color: LightSlateGray;
+    font-weight: bolder;
+    margin: 0.5% 0% 0% 0%;
+    box-shadow: 0 0 1vmin 0.5vmin Grey;
+    width: 76px;
+    text-align:left;
+}
+
+.create {
+    position: relative;
+    text-align:left;
+    margin: 6% 0% 0% 0%;
+    font-size: 1.5em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    width: 350px;
+    text-shadow: 3px 2px 1px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1);
+}
+
+a1, a2, a3, a4 {
+	    color: White;
+}
+p {	margin: 1% auto;
+	color: Black;
+}
+
+.create_button {
+    color: LightSlateGray;
+    box-shadow: 0 0 1vmin 0.5vmin Grey;
+    width: 124px;
+}
+
+.table {
+
+	border-collapse:separate;
+    border:solid white 1px;
+    border-radius:10px;
+    -moz-border-radius:6px;
+	position: relative;
+    margin: 0.7% 0% 0% 28%;
+    font-size: 1.2em;
+    color: White;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    width: 950px;
+    box-shadow: 0 0 1vmin 0.5vmin Grey;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 1px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 1px 0 #000000, 0 1px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+
+}
+
+table, th { 
+
+	text-align: center;
+}
+ .th1, .th2, .th3, .th4, .th5  {
+    background-color: rgba(247, 215, 158, 0.4);
+    color: White;
+      }
+.th2, .th4  {
+    background-color: rgba(247, 215, 158, 0.4);
+    color: White;
+    border:solid white 1px;
+      }
+
+.td1, .td2, .td3, .td4, .td5 {
+
+    background-color: rgba(176, 176, 176, 0.6);
+} 
+
+.td2, .td3, .td4, .td5 {
+	    border-left: solid white 1px;
+    border-top: solid white 1px;
+}
+
+.a_edit, .a_delete {
+	text-decoration:none !important;
+	color:rgba(247, 215, 158, 1);
+}
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0% auto;
+    position: fixed;
+}
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}

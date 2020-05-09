@@ -1,0 +1,53 @@
+html {font-size: 24px;}
+
+header {
+	margin: 1% 0.5% 0% 0%;
+    text-align:center;
+    color: White;
+    font-size: 2.8em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    padding: 0% 1% 0% 0%;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 10px 6px 4px Tan, 10px 7px 4px Tan, 10px 7px 4px Tan;
+}
+
+body {
+	background: url("../img/fon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+	width:100%;
+	padding: 0.5% 1% 0.5% 1%;
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+}
+
+.create {
+    position: relative;
+    text-align:left;
+    margin: 0% 0% 0% 0%;
+    font-size: 1.5em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    width: 500px;
+    text-shadow: 3px 2px 1px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1);
+}
+
+a1, a2, a3, a4 {
+        color: White;
+}
+
+p { margin: 1% auto;
+    color: Black;
+}
+
+.create_button {
+    color: Grey;
+}
+
+.button_back {
+    font-size: 1.5em;
+    color: Grey;
+    font-family: Times New Roman;
+    font-weight: bolder;
+}

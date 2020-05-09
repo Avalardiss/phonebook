@@ -1,0 +1,40 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/search_results.css' %}">
+    <link rel="shortcut icon" type="image" href="{% static 'img/icon.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Результаты поиска</title>  
+</head>
+
+<body>
+    <header>&#9742; Результаты поиска </header>
+
+<form  class="button_back" action="{% url 'button_back' %}">
+      <button type="submit">Назад к справочнику</button>
+</form>
+
+<!------вывод таблицы абонентов-------->
+<h1>Список найденных абонентов</h1>
+
+<table class = "table">
+    <thead><th class="th1">Воинское звание</th><th class="th2">Фамилия, Имя, Отчество</th><th class="th3">Рабочий телефон</th><th class="th4">IP телефон</th><th class="th5">Редактирование абонента</th></thead>
+{% for abonent in object_list %}
+    <tr>
+        <td  class="td1" valign="center" align="center"> {{ abonent.rank }} </td>
+        <td  class="td2" valign="center" align="center"> {{ abonent.name }} </td>
+        <td  class="td3" valign="center" align="center"> {{ abonent.phone }} </td>
+        <td  class="td4" valign="center" align="center"> {{ abonent.IP_phone }} </td>
+        <td  class="td5" valign="center" align="center"><a class="a_edit" href="../edit/{{abonent.id}}">Изменить</a> | <a class="a_delete" href="../delete/{{abonent.id}}">Удалить</a></td>
+    </tr>
+
+{% endfor %}
+    </table>
+</body>
+</html>

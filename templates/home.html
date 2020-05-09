@@ -1,0 +1,91 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="shortcut icon" type="image" href="{% static 'img/icon.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Телефонный справочник</title>
+  </head>
+  <body>
+    <header>&#9742; Телефонный справочник</header>
+
+<div class="search">
+<!------поисковая строка-------->
+<form  action="{% url 'search_results' %}" method="get">
+  <input required="true" name="q" type="text" autofocus class="form-control" placeholder="Введите данные для поиска (ввод ФИО с заглавной буквы)" value="{{ qwery }}">
+    <span class="{% url 'search_results' %}">
+       <div class="button_search"> <button type="submit" class="{% url 'search_results' %}">Поиск</button></div>
+  </span>
+</form>
+</div>
+<!------форма добавления абонента-------->
+<div class="create">
+<h1>Добавление абонента</h1>
+    <form method="POST" action="create/" class = "input_create">
+    {% csrf_token %}        
+        <p>
+            <a1><label>Введите воинское звание:</label><br></a1>
+            <input type="text" name="rank" />
+        </p>
+        <p>
+            <a2><label>Введите ФИО:</label><br></a2>
+            <input type="text" name="name" />
+        </p>
+        <p>
+            <a3><label>Введите рабочий телефон:</label><br></a3>
+            <input type="text" name="phone" />
+        </p>
+        <p>
+            <a4><label>Введите IP телефон:</label><br></a4>
+            <input type="text" name="IP_phone" />
+        </p>
+       <div class="create_button"> <input type="submit" value="Сохранить" > </div>
+    </form>
+</div>
+
+<!------пагинация (постранично)-------->
+<ul class="pagination">
+ 
+    {% if abonents.has_previous %}
+        <li><a href="?page={{ abonents.previous_page_number }}">«</a></li>
+    {% endif %}
+ 
+    {% for num in abonents.paginator.page_range %}
+        {% if num == abonents.number %}
+            <li><span class="current"><b>{{ num }}</b></span></li>
+        {% else %}
+            <li><a href="?page={{ num }}"> {{ num }}</a></li>
+        {% endif %} 
+    {% endfor %}
+ 
+    {% if home.has_next %}
+        <li><a href="?page={{ home.next_page_number }}">»</a> </li>
+    {% endif %}
+</ul>
+
+
+
+
+<!------вывод таблицы абонентов-------->
+<h2>Список абонентов</h2>
+
+<table class = "table">
+    <thead><th class="th1">Воинское звание</th><th class="th2">Фамилия, Имя, Отчество</th><th class="th3">Рабочий телефон</th><th class="th4">IP телефон</th><th class="th5">Редактирование абонента</th></thead>
+{% for abonent in object_list %}
+    <tr>
+        <td  class="td1" valign="center" align="center"> {{ abonent.rank }} </td>
+        <td  class="td2" valign="center" align="center"> {{ abonent.name }} </td>
+        <td  class="td3" valign="center" align="center"> {{ abonent.phone }} </td>
+        <td  class="td4" valign="center" align="center"> {{ abonent.IP_phone }} </td>
+        <td  class="td5" valign="center" align="center"><a class="a_edit" href="edit/{{abonent.id}}">Изменить</a> | <a class="a_delete" href="delete/{{abonent.id}}">Удалить</a></td>
+    </tr>
+{% endfor %}
+    </table>
+
+</body>
+</html>

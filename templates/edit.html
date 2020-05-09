@@ -1,0 +1,48 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/edit.css' %}">
+    <link rel="shortcut icon" type="image" href="{% static 'img/icon.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Изменение данных абонента</title>  
+</head>
+
+<body>
+     <header>&#9742; Изменение данных абонента </header>
+<!------форма добавления абонента-------->
+<div class="create">
+    <form method="POST">
+    {% csrf_token %}        
+        <p>
+            <a1><label>Введите воинское звание:</label><br></a1>
+            <input type="text" name="rank" value="{{abonent.rank}}" />
+        </p>
+        <p>
+            <a2><label>Введите Ф.И.О.:</label><br></a2>
+            <input type="text" name="name" value="{{abonent.name}}" />
+        </p>
+        <p>
+            <a3><label>Введите рабочий телефон:</label><br></a3>
+            <input type="text" name="phone" value="{{abonent.phone}}" />
+        </p>
+        <p>
+            <a4><label>Введите IP телефон:</label><br></a4>
+            <input type="text" name="IP_phone" value="{{abonent.IP_phone}}" />
+        </p>
+       <div class="create_button"> <input type="submit" value="Сохранить" > </div>
+       
+    </form>
+</div>
+
+<form  class="button_back" action="{% url 'button_back' %}">
+      <button type="submit">Назад к справочнику</button>
+</form>
+
+
+</body>
+</html>

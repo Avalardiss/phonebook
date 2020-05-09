@@ -1,0 +1,88 @@
+html {font-size: 24px;}
+
+header {
+	margin: 1% 0.5% 0% 0%;
+    text-align:center;
+    color: White;
+    font-size: 2.8em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    padding: 0% 1% 0% 0%;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 10px 6px 4px Tan, 10px 7px 4px Tan, 10px 7px 4px Tan;
+}
+
+body {
+	background: url("../img/fon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+	width:100%;
+	padding: 0.5% 1% 0.5% 1%;
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+}
+
+h1 {
+    position: relative;
+    color: White;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    margin: 1% auto;
+    text-align:left;
+    font-size: 2em;
+    text-shadow: 6px 4px 3px rgb(0, 0, 0), 0 2px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 4px 0 #000000, 0 3px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 10px 6px 4px Tan, 10px 7px 4px Tan, 10px 7px 4px Tan;
+}
+
+.table {
+
+    border-collapse:separate;
+    border:solid white 1px;
+    border-radius:10px;
+    -moz-border-radius:6px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: White;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    width: 950px;
+    box-shadow: 0 0 1vmin 0.5vmin Grey;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0), 0 1px 0 #000000, 0 1px 0 rgb(0, 0, 0), 0 1px 0 #000000, 0 1px 0 rgb(8, 8, 8), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+
+}
+
+table, th { 
+
+    text-align: center;
+}
+ .th1, .th2, .th3, .th4, .th5  {
+    background-color: rgba(247, 215, 158, 0.4);
+    color: White;
+      }
+.th2, .th4  {
+    background-color: rgba(247, 215, 158, 0.4);
+    color: White;
+    border:solid white 1px;
+      }
+
+.td1, .td2, .td3, .td4, .td5 {
+
+    background-color: rgba(176, 176, 176, 0.6);
+} 
+
+.td2, .td3, .td4, .td5 {
+        border-left: solid white 1px;
+    border-top: solid white 1px;
+}
+
+.a_edit, .a_delete {
+    text-decoration:none !important;
+    color:rgba(247, 215, 158, 1);
+}
+
+.button_back {
+    font-size: 1.5em;
+    color: Grey;
+    font-family: Times New Roman;
+    font-weight: bolder;
+}
